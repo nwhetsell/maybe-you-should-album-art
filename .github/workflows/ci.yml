@@ -1,0 +1,22 @@
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+  CI:
+    runs-on: macos-latest
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v2
+
+    - name: Install R packages
+      run: R -e 'install.packages(c("dplyr", "ggplot2"), repos = "https://cloud.r-project.org/")'
+
+    - name: Create album art
+      run: ./create
+
+    - name: Archive album art
+      uses: actions/upload-artifact@main
+      with:
+        name: Maybe You Should
+        path: Maybe You Should.png
