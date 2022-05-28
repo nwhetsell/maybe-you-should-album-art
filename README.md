@@ -1,7 +1,8 @@
 # “Maybe You Should” Album Art
 
 This is a collection of scripts for creating the album art for
-[“Maybe You Should”](https://music.apple.com/us/album/maybe-you-should-single/1623481094) using [R](https://www.r-project.org) and [ImageMagick](https://imagemagick.org),
+[“Maybe You Should”](https://open.spotify.com/track/0uq2YvDEeMIEKqF0zgQyS1)
+using [R](https://www.r-project.org) and [ImageMagick](https://imagemagick.org),
 based on concepts from https://github.com/cutterkom/generativeart.
 
 To install R and ImageMagick using [Homebrew](https://brew.sh) on macOS, run:
